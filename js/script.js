@@ -7,3 +7,17 @@ function changeImage(){
     console.log(rnd);    
     imageToChange.src = images[rnd];
 }
+
+function switchmode() {
+    console.log(switchButton.innerHTML);
+    if(switchButton.innerHTML === 'Night'){
+    documentBody.style.background = "black"
+    switchButton.innerHTML = 'Day';
+    }
+    else {
+        documentBody.style.background = "white";
+        switchButton.innerHTML = 'Night';
+
+    }
+}
+
